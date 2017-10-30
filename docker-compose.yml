@@ -1,0 +1,12 @@
+version: '2'
+services:
+  webapp:
+    image: appsvc/apps:apache-php-mysql-0.2
+    volumes:
+      - ./:/var/www/wwwroot
+    ports:
+      - 80:80
+    environment:
+      DATABASE_TYPE: local
+      PHPMYADMIN_USERNAME: phpmyadmin
+      PHPMYADMIN_PASSWORD: MS173m_QN
